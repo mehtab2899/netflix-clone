@@ -1,0 +1,39 @@
+.row {
+	padding-top: 1rem;
+	margin-left: 2rem;
+
+	& h2 {
+		text-transform: uppercase;
+	}
+
+	&__posters {
+		display: flex;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		padding: 1.3rem;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&__poster {
+		width: 100%;
+		object-fit: contain;
+		max-height: 10rem;
+		margin-right: 1rem;
+		transition: transform 450ms;
+
+		&:hover {
+			transform: scale(1.08);
+		}
+	}
+
+	&__posterLarge {
+		max-height: 20rem;
+
+		&:hover {
+			transform: scale(1.09);
+		}
+	}
+}
